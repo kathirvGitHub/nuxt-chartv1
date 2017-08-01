@@ -7,7 +7,6 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 import { mapGetters } from 'vuex'
 import socket from '~/plugins/socket.io.js'
 import Vue from 'vue'
@@ -60,9 +59,6 @@ var chartOptions = {
 
 export default {
   middleware: 'userInfo',
-  components: {
-    Logo
-  },
   data () {
     return {
       options: chartOptions

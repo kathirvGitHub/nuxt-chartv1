@@ -3,7 +3,8 @@ const { Nuxt, Builder } = require('nuxt')
 const server = require('http').createServer(app)
 const io = require('socket.io')(server)
 const axios = require('axios')
-const host = process.env.NOW_URL || '127.0.0.1' // new code in RC3
+// const host = process.env.NOW_URL || '127.0.0.1' // new code in RC3
+const host = '0.0.0.0'
 const port = process.env.PORT || 3000
 const isProd = process.env.NODE_ENV === 'production'
 
